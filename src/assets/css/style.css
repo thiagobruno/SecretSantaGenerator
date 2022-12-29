@@ -1,0 +1,111 @@
+*{
+    font-family: 'Arial';
+
+}
+*:focus {
+    outline: none;
+}
+.heading{
+	width: 40%;
+	margin: 30px auto;
+	text-align: center;
+	color: 	#000;
+}
+form {
+	width: 40%; 
+	margin: 30px auto; 
+	border-radius: 5px; 
+	padding: 10px;
+	background: #fafafa;
+	border: 1px solid #ddd;
+}
+form p {
+	color: red;
+	margin: 0px;
+}
+.person_input {
+	width: 30%;
+	height: 15px; 
+	padding: 10px;
+	border: 2px solid #ddd;
+}
+.add_btn {
+	height: 39px;
+	background: #ddd;
+	color: 	#333;
+	border: 2px solid #ddd;
+	border-radius: 5px; 
+	padding: 5px 20px;
+    text-decoration: none;
+}
+
+table {
+    width: 50%;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+tr {
+	border-bottom: 1px solid #cbcbcb;
+}
+
+th {
+	font-size: 19px;
+	color: #000;
+}
+
+th, td{
+	border: none;
+    height: 30px;
+    padding: 2px;
+    text-align: left;
+}
+
+tr:hover {
+	background: #E9E9E9;
+}
+
+.person {
+	text-align: left;
+}
+
+.delete{
+	text-align: left;
+}
+
+td.selected{
+    color: #2aa52a
+}
+
+td.person_selected span{
+    opacity: .5;
+    text-decoration: line-through;
+    font-style: italic;
+}
+.delete a{
+	color: #a52a2a;
+	padding: 3px 10px 5px 10px;
+	border-radius: 3px;
+	text-decoration: none;
+}
+.toggle{
+	text-align: left;
+}
+.toggle.selected a{
+	color: #2aa52a;
+	padding: 1px 6px;
+	border-radius: 3px;
+	text-decoration: none;
+}
+
+.toggle.unselected a{
+	color: #a5a52a;
+	padding: 1px 6px;
+	border-radius: 3px;
+	text-decoration: none;
+}
+.toggle_eye_all, 
+.target_eye
+{
+color: #000
+}

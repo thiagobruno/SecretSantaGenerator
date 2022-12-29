@@ -1,0 +1,44 @@
+version: '3.8'
+ 
+services:
+  db:
+    image: mysql:5.7
+    container_name: db
+    environment:
+      MYSQL_ROOT_PASSWORD: hugo
+      MYSQL_DATABASE: secret_santa_db
+      MYSQL_USER: hugo
+      MYSQL_PASSWORD: hugo
+    ports:
+      - "6033:3306"
+    volumes:
+      - "./sql/01.sql:/docker-entrypoint-initdb.d/1.sql"
+      - dbdata:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    links:
+      - db
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    restart: always
+    ports:
+      - 8081:80
+
+  web:
+    build: .
+    container_name: php_web
+    depends_on:
+      - db
+    volumes:
+      - ./src/:/var/www/html/
+    ports:
+      - "8100:80"
+    stdin_open: true
+    tty: true
+      
+volumes:
+  dbdata:
