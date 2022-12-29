@@ -21,4 +21,6 @@ Follow the steps below to run this example
 - [http://localhost:8081 - MYSQL Admin](http://localhost:8081)
 
 ## You can watch some instructions here
-- [English]()
+- [English] https://www.youtube.com/watch?v=7Bxh24ULxiw
+
+[![Video](https://img.youtube.com/vi/7Bxh24ULxiw/0.jpg)](https://www.youtube.com/watch?v=7Bxh24ULxiw)

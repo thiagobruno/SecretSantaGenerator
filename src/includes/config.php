@@ -33,8 +33,8 @@ $mail_title = 'Secret Santa';
 // https://mailtrap.io
 $smtp_host = 'smtp.mailtrap.io';
 $smtp_port = 2525;
-$smtp_username = '78453f9791b194';
-$smtp_password = 'da8397c860cf66';
+$smtp_username = 'fb8955a7656134';
+$smtp_password = '29c15cc93492d6';
 
 /**
  * CURRENT DATE TIME
