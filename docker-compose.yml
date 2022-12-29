@@ -3,7 +3,7 @@ version: '3.8'
 services:
   db:
     image: mysql:5.7
-    container_name: db
+    container_name: db-secretSantaGenerator
     environment:
       MYSQL_ROOT_PASSWORD: hugo
       MYSQL_DATABASE: secret_santa_db
@@ -17,7 +17,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
-    container_name: phpmyadmin
+    container_name: phpmyadmin-secretSantaGenerator
     links:
       - db
     environment:
@@ -30,7 +30,7 @@ services:
 
   web:
     build: .
-    container_name: php_web
+    container_name: php_web-secretSantaGenerator
     depends_on:
       - db
     volumes:

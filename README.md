@@ -14,7 +14,7 @@ Follow the steps below to run this example
 - Open the CMD/Command prompt inside the cloned repository
 - Run the following commands (one by time)
   - (Run it inside the /src directory) ```composer install```
-  - (Run it inside the root) ```docker-compose up -d --build --project-name SecretSantaGenerator```
+  - (Run it inside the root) ```docker-compose --profile SecretSantaGenerator up -d --build```
 
 ## How to access the project
 - [http://localhost:8100 - WEB/Secret Santa Generator](http://localhost:8100)
